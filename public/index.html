@@ -12,15 +12,61 @@
   </head>
   <body>
     <div class="container">
+      
+
+      
+
+
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Welcome</a>
       </nav>
 
-      <h1>Hello, world!</h1>
+      <h1>Hello</h1>
+            
+            <div id="mypublickey"class="p-3 mb-2 bg-success text-white"></div>
+            <div id="myprivatekey"class="p-3 mb-2 bg-danger text-white"></div>
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success" id="inputGroup-sizing-sm">Third Party Public Key:</span>
+              </div>
+              <input type="text" id="thirdpartypublickey" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            
+
+
+
+        <div class="form-group">
+          <label for="originalMessage">Original Message</label>
+          <textarea class="form-control" id="originalMessage" placeholder="Enter orignal message" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="encryptedMessage">Decrypt Message</label>
+          <textarea class="form-control" id="encryptedMessage" placeholder="Enter encrypted message" rows="3"></textarea>
+        </div>
+        <button id="send" onclick="encryptString()" class="btn btn-primary">Encrypt</button>
+        <button id="send" onclick="decryptString()" class="btn btn-primary">Decrypt</button>
+
+      <h3 id="encmsg"></h3>
+
+
+
+
 
     </div>
-   
 
+
+
+
+
+     
+    <script sourceType="module" src="main_bundle.js"></script>
+    <script>
+
+
+    </script>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
